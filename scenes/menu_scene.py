@@ -43,6 +43,8 @@ class MenuScene(BaseScene):
                     if event.key == pygame.K_1:
                         print("Switching to Note Trainer...")
                         self.manager.switch_to('NOTE_TRAINER')
+                    elif event.key == pygame.K_2:
+                        self.manager.switch_to('RHYTHM_TRAINER')
                     elif event.key == pygame.K_ESCAPE:
                         # Allow going back to re-select keyboard
                         self.state = 'SELECT_KEYBOARD'
